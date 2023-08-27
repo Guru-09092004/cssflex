@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card css</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+      font-family: poppins;
+  }
+  
+  .container{
+      margin: 300px 0;
+      height: 500px;
+      display: flex;
+      background-color: rgb(253, 254, 255);
+      justify-content: space-evenly;
+      text-align: center;
+      color: white;
+  }
+  
+  .box{
+      height: 400px;
+      width: 20%;
+      border-radius: 20px;
+      border: solid white 0.3em;
+      padding: 10px;
+      margin: 30px;
+      background-color: rgba(235, 235, 235, 0.97);
+      border-bottom: solid rgb(21, 237, 154) 10px;
+  }
+  
+  .card-1{
+      background-color: orangered;
+      opacity: 90%;
+  }
+  
+  .card-2{
+      background-color: rgb(8, 56, 143);
+      opacity: 90%;
+  }
+  
+  
+  
+  .card-3{
+      background-color: rgba(146, 94, 195, 0.685);
+      opacity: 90%;
+  }
+  
+  @media(max-width:850px){
+      .container{
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          font-size: smaller;
+      }
+      .box{
+          width: 80%;
+          font-size: 22px;
+      }
+  
+  
+  }
+  </style>
+  </head>
+  <body>
+    <h1>Card Model</h1>
+    <div class="container">
+      <div class="card-1 box">
+        <h1>Plan 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum
+          error, molestias itaque dolor laborum fugit aperiam dolorem, ipsum
+          quia, suscipit natus eligendi laudantium dicta animi sapiente ratione
+          debitis eaque.
+        </p>
+      </div>
+      <div class="card-2 box">
+        <h1>Plan 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+          necessitatibus suscipit odio modi soluta quo natus veritatis illum
+          voluptates dolorem quas exercitationem voluptatem laudantium ullam.
+          Voluptatem asperiores nesciunt cumque deserunt.
+        </p>
+      </div>
+      <div class="card-3 box">
+        <h1>Plan 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          officia mollitia inventore enim maiores sed, fugiat velit nulla ut
+          repellat beatae aliquam corporis facere quam! Nemo obcaecati mollitia
+          ab non!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
